@@ -3,17 +3,48 @@
 html, body, div, form, fieldset, legend, label
   margin: 0
   padding: 0
+  font-family: helvetica, arial, sans-serif
 
 table
   border-collapse: collapse
   border-spacing: 0
 
 th, td
- text-align: left
- vertical-align: top
+  text-align: left
+  vertical-align: top
 
 h1, h2, h3, h4, h5, h6, th, td, caption
   font-weight: normal
 
 img
   border: 0
+  
+  
+.hex
+  width: 36px  // 51 - padding
+  height: 43px // 43 - padding
+  display: inline-block
+  margin: -3px 6px
+  color: white
+  padding-top: 6px
+  padding-left: 15px
+  font-weight: bold
+  font-size: 1.8em
+  background-repeat: no-repeat
+  &.white
+    color: black
+    background-image: url("/images/whitehex.png")
+  &.blue
+    background-image: url("/images/bluehex.png")
+  &.red
+    background-image: url("/images/redhex.png")
+  &.green                          
+    background-image: url("/images/greenhex.png")
+  &.cyan                           
+    background-image: url("/images/cyanhex.png")
+.hexrow
+  margin-bottom: -22px
+  white-space: nowrap
+  &.stagger
+    margin-left: 34px
+    

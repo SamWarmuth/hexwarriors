@@ -1,1 +1,20 @@
-%h1 Hello, World!
+%p
+-colors = %w{red blue green cyan white}
+-40.times do |i|
+  .hexrow{:class => (i%2 == 1 ? "" : "stagger")}
+    -25.times do
+      .hex{:class => colors[rand(5)]} A
+  
+  
+  
+:javascript
+  $(document).ready(function(){
+    $(".hex").click(function(){
+      setHexColor(this, "red");
+      return true;
+    });
+  
+  });
+  function setHexColor(hex, color){
+    $(hex).removeClass().addClass("hex").addClass(color);
+  }
