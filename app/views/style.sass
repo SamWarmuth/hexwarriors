@@ -21,17 +21,18 @@ img
   
   
 .hex
-  width: 36px  // 51 - padding
-  height: 43px // 43 - padding
+  width: 51px  // 51 - padding
+  height: 40px // 43 - padding
   display: inline-block
   margin: -3px 6px
   color: white
-  padding-top: 6px
-  padding-left: 15px
+  padding-top: 8px
+  text-align: center
   font-weight: bold
-  font-size: 1.8em
+  font-size: 1.55em
   background-repeat: no-repeat
   &.white
+    text-indent: -30000px
     color: black
     background-image: url("/images/whitehex.png")
   &.blue
@@ -41,7 +42,13 @@ img
   &.green                          
     background-image: url("/images/greenhex.png")
   &.cyan                           
+    color: black
     background-image: url("/images/cyanhex.png")
+  &.black
+    text-indent: -30000px
+    color: black
+    background-image: url("/images/blackhex.png")
+    
 .hexrow
   margin-bottom: -22px
   white-space: nowrap

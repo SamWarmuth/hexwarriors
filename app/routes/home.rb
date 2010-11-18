@@ -1,5 +1,6 @@
 class Main
   get "/" do
+    @battle = Battle.first
     haml :index
   end
   get "/css/style.css" do

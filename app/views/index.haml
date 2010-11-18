@@ -1,9 +1,10 @@
 %p
--colors = %w{red blue green cyan white}
--40.times do |i|
+-colors = %w{white red blue green cyan black}
+-letters = ('A'..'F').to_a
+-@battle.map.each_with_index do |row, i|
   .hexrow{:class => (i%2 == 1 ? "" : "stagger")}
-    -25.times do
-      .hex{:class => colors[rand(5)]} A
+    -@battle.map[i].each_with_index do |hex,j|
+      .hex{:class => colors[hex/100]}= hex%100
   
   
   
